@@ -5,7 +5,7 @@ public class BruteforceLocalCracker extends CryptoUtils implements CrackerFactor
     }
 
     public static void bruteForceCrack(String hashedPassword) {
-        System.out.println("Cracking password by brute force...");
+        System.out.println("Craquage par BruteForce en cours.....");
         // Longueur maximale du mot de passe à générer pour le craquage par force brute
         int maxLength = 5;
 
