@@ -22,7 +22,7 @@ public class BruteforceLocalCracker extends CryptoUtils implements CrackerFactor
             // Calculer le hash MD5 de la tentative
             String hashedAttempt = md5Hasher(attempt);
             if (hashedAttempt.equals(hashedPassword)) {
-                System.out.println("Password cracked by brute force: " + attempt);
+                System.out.println("Mot de Passe craqué par Brute Force: " + attempt);
                 return;
             }
         } else {

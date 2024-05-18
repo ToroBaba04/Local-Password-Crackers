@@ -29,7 +29,7 @@ public class DictionaryLocalCracker extends CryptoUtils implements CrackerFactor
     }
 
     public void dictionaryAttack(String hashedPassword, List<String> customDictionary) {
-        System.out.println("Cracking password using dictionary...");
+        System.out.println("Craquage par Dictionnaire en cours...");
 
         // Précalculez les hachages du dictionnaire s'ils ne sont pas déjà précalculés
         if (passwordMap.isEmpty()) {
@@ -42,9 +42,9 @@ public class DictionaryLocalCracker extends CryptoUtils implements CrackerFactor
         // Recherche dans le dictionnaire
         if (passwordMap.containsKey(hashedPassword)) {
             String plaintextPassword = passwordMap.get(hashedPassword); // Récupérer le mot de passe en clair
-            System.out.println("Password cracked using dictionary: " + plaintextPassword);
+            System.out.println("Mot de Passe craqué par Dictionnaire : " + plaintextPassword);
         } else {
-            System.out.println("Password not found in dictionary.");
+            System.out.println("Mot de passe non trouvé dans le dictionnaire.");
         }
     }
 }

@@ -24,7 +24,7 @@ public class PasswordCrackerApp extends CryptoUtils {
 
         // Créer une instance de BruteforceLocalCracker et tester
         BruteforceLocalCracker bruteforcer = new BruteforceLocalCracker();
-        System.out.println("Testing Bruteforce Cracker:");
+        System.out.println("Test du craquage par Brute Force:");
         bruteforcer.crackPassword(hash1);  // Devrait réussir pour des mots courts avec force brute
 
         // Demander le deuxième mot de passe
@@ -41,7 +41,7 @@ public class PasswordCrackerApp extends CryptoUtils {
         // Créer une instance de DictionaryLocalCracker avec un petit dictionnaire
         List<String> dictionary = List.of("hello", "world", password2, "123456", "crack");
         DictionaryLocalCracker dictionaryCracker = new DictionaryLocalCracker(dictionary);
-        System.out.println("Testing Dictionary Cracker:");
+        System.out.println("Test du craquage par Dictionnaire:");
         dictionaryCracker.crackPassword(hash2);  // Devrait réussir avec une attaque de dictionnaire
     }
 }
