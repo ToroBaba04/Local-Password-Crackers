@@ -34,7 +34,7 @@ public class DictionaryLocalCracker extends CryptoUtils implements CrackerFactor
         // Précalculez les hachages du dictionnaire s'ils ne sont pas déjà précalculés
         if (passwordMap.isEmpty()) {
             for (String word : customDictionary) {
-                String hashedWord = md5(word);
+                String hashedWord = md5Hasher(word);
                 passwordMap.put(hashedWord, word); // Stocker la correspondance entre le hachage et le mot de passe
             }
         }

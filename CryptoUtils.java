@@ -2,7 +2,7 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 
 public class CryptoUtils {
-    public static String md5(String input) {
+    public static String md5Hasher(String input) {
         try {
             // Créer un objet MessageDigest pour l'algorithme MD5
             MessageDigest md = MessageDigest.getInstance("MD5");
