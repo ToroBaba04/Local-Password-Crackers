@@ -17,7 +17,7 @@ public class PasswordCrackerApp extends CryptoUtils {
         Arrays.fill(password1Chars, ' '); // Effacer les caractères du mot de passe de la mémoire
 
         // Calculer le hachage MD5 du premier mot de passe
-        String hash1 = md5(password1);
+        String hash1 = md5Hasher(password1);
 
         // Afficher le hachage pour vérification
         System.out.println("Hash 1: " + hash1);
@@ -33,7 +33,7 @@ public class PasswordCrackerApp extends CryptoUtils {
         Arrays.fill(password2Chars, ' '); // Effacer les caractères du mot de passe de la mémoire
 
         // Calculer le hachage MD5 du deuxième mot de passe
-        String hash2 = md5(password2);
+        String hash2 = md5Hasher(password2);
 
         // Afficher le hachage pour vérification
         System.out.println("Hash 2: " + hash2);
